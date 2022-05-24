@@ -1,0 +1,147 @@
+
+/* CALSES GENERALES */
+body{
+    height: 100%;
+}
+
+/* divs contenedores */
+section {
+    display: flex;
+    justify-content: center;
+    background-color: #102336ff;
+    align-items: center;
+    height: 100%;
+}
+
+.section_hija {
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px;
+}
+
+.encabezado {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /*     padding: 10px; */
+    padding: 10px 0px 0px 0px;
+
+}
+
+/* formularios */
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+/* contenedor de inputs */
+.label_formularios_flex {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* caja de ingreso */
+.input_style {
+    height: 30px;
+    text-align: center;
+}
+
+/* boton de tilde */
+.acepta_style {
+    margin: 0px 0px 10px 2px;
+}
+
+/* botones */
+.btn_formulario_flex {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn_formulario_style {
+    background-color: #840032;
+    color: white;
+    border: #840032;
+    margin-bottom: 10px;
+    height: 100%;
+    padding: 5px;
+}
+
+/* contenedor de inputs */
+/* formularios */
+
+/* footer */
+footer {
+    background-color: black;
+    margin-top: 0%;
+}
+
+footer h4 {
+    color: white;
+}
+
+/* ESTILOS DE TEXTO */
+
+.label_formularios_texto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #840032;
+}
+
+.label_formulario_botones {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+}
+
+.encabezado_texto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    text-align:center
+    
+}
+
+/* iNICIAR sESION */
+
+.doble_linea {
+    display: block;
+    width: 150px;
+}
+
+/* CONSULTAS */
+.datos_flex_padre{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.textArea_style textarea{
+    text-align: center;
+}
+
+/* VENDEDORES MAYORISTAS */
+.masEspacio{
+    width: 110%;
+}

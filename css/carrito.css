@@ -1,0 +1,197 @@
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #102336ff !important;
+}
+
+footer {
+    border-top: #FFFFFF solid 1px;
+    border-bottom: #FFFFFF solid 3px;
+    background-color: black;
+    border: black;
+}
+
+
+/* ENCABEZADO DE LA PAGINA */
+.titulo_carrito {
+    margin: 20px 20px 20px 45px;
+}
+
+.titulo_carrito a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: #FFFFFF;
+    background-color: #e59500ff;
+    border: #FFFFFF;
+
+}
+
+/* DISEÑO DEL CONTENEDOR DE TODOS LOS PRODUCTOS */
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* DISEÑO DE CADA PRODUCTO Y SUS ELEMENTOS */
+.zapas_unidad {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: #840032ff;
+    margin: 15px;
+}
+
+.foto_zapa {
+    width: 400px;
+    height: 400px;
+    padding: 30px 30px 0px 30px;
+}
+
+.zapas_descripcion {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 30px 10px 30px;
+    margin-bottom: 10px;
+}
+
+
+.doble_linea_carrito {
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.title_precio {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.precio_producto {
+    /*estilo de texto */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #e59500ff;
+    color: #FFFFFF;
+    padding: 8px;
+    margin-top: 6px;
+    width: min-content;
+}
+
+select {
+    width: 75px;
+}
+
+.btn_agregar {
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+
+/* JAVASCRIPT SECCION */
+
+/* modelos disponibles */
+/* .modelos_container {
+    background-color: rgba(0, 0, 0, 0.681);
+    height: max-content;
+    width: max-content;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.modelos_container ul {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10px;
+    padding: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.modelos_container ul li {
+    padding: 5px;
+} */
+
+/* carrito */
+.carrito_JS_container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.carrito_JS_contente {
+    background-color: #FFFFFF;
+    width: 70%;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+/* seccion de abajo del contenido (total, comprar,etc) */
+.bottom_carrito {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.bottom_carrito_total {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.bottom_carrito_total div {
+    border: black 3px solid;
+    width: 20%;
+    height: 70px;
+    color: black;
+    text-align: left;
+    padding: 10px;
+}
+
+/* modelos,cantidad,precio,talles */
+.carrito_JS_description {
+    margin: 20px;
+}
+
+.table__cantidad>input {
+    width: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 5px;
+    margin-top: -10px;
+}
+
+.table__cantidad>button {
+    width: 37px;
+    height: 30px;
+    background-color: #8C30F5;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+}
