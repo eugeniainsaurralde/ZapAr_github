@@ -14,6 +14,7 @@ body {
   margin-top: 0%;
   min-height: 100vh;
   overflow-x: hidden;
+  font-size: 100%;
 }
 
 li {
@@ -41,14 +42,24 @@ li {
 }
 
 /* Titulos, subtitulos y parrafos*/
+.menu_header_text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #18191F;
+  text-align: center;
+}
+
 h1 {
-  width: 540px;
-  height: 196px;
+  /* width: 540px;
+  height: 196px; */
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 100px;
-  line-height: 110px;
+  font-size: 6.25rem;
+  line-height: 6.87rem;
   color: #102336;
 }
 
@@ -124,6 +135,11 @@ p {
   color: #FFFFFF;
 }
 
+/* .doble_linea {
+  display: block;
+  text-align: center;
+  line-height: 20px;
+} */
 
 /*Organizacion de secciones*/
 body {
@@ -137,47 +153,44 @@ main {
   margin-left: 40px;
 }
 
-/* HEADER */
+/* MENU */
 header {
   position: sticky;
-  top: 0%;
+  top: 0;
   width: 100%;
-  background-color: #FFFFFF;
+  height: min-content;
+  z-index: 2;
 }
 
-.header {
+.nav {
+  background-color: #FFFFFF;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 /* header logo */
-.header .logo_header {
+.logo_header {
   width: 191px;
   height: 85px;
 }
 
-.header .logo_header img {
+.logo_header img {
   width: 100%;
   height: 100%;
 }
 
 /* header menu */
-.header .menu_header {
+.menu_header {
   display: flex;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
 }
 
-.header .menu_header li a {
-  margin: 0 15px;
-  padding: 0px;
-  /*   Propiedades de fuente y tamaño */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #18191F;
+.menu_header li a {
+  width: min-content;
+  padding: 15px;
 }
 
 /* header botones */
@@ -185,6 +198,18 @@ header {
   display: flex;
   flex-wrap: nowrap;
 }
+
+.text {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.btn_hmg, .btn_hmg_input, .fa-cart-shopping, .fa-user {
+  display: none;
+}
+
+
 
 /* INICIO */
 #Inicio {
@@ -238,6 +263,143 @@ header {
 
 .zapas_botitas {
   margin-top: -70px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  /* CLASES GENERICAS */
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 1.5%;
+  }
+
+  .botones_violetas {
+    margin: 6px;
+    padding: 8px;
+    background: #8C30F5;
+    border-radius: 6px;
+    border-color: #8C30F5;
+  }
+
+  /* titulos, subtitulos y textos */
+  /*  h1 {
+    width: min-content;
+    height: min-content;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+  } */
+
+  sub {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* MENU */
+  header {
+    position: fixed;
+  }
+
+  /*   boton hamburguese */
+  .btn_hmg {
+    display: block;
+    cursor: pointer;
+    font-size: 25px;
+    color: #102336;
+    margin-left: 8px;
+  }
+
+  /*   logo */
+  .logo_header {
+    width: 110px;
+    height: 60px;
+    margin-left: 40px;
+  }
+
+  /* botones sesion y carrito */
+  .fa-cart-shopping, .fa-user {
+    display: block
+  }
+
+  .text {
+    display: none;
+  }
+
+  /*   lista menu */
+  .menu_header {
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    bottom: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /*   fondo */
+    background: #840033;
+    opacity: 0.9;
+
+    /*     transicion */
+    clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out;
+  }
+
+  .menu_header li a {
+    /*  tipografia */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .btn_hmg_input:checked+.menu_header {
+    clip-path: circle(100% at center);
+  }
+
+  /* INICIO */
+  /* Encabezados */
+  .encabezados {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 5px;
+
+  }
+
+  /* Imagenes de portada */
+  .imagenes_portada {
+    background-color: #840032ff;
+    /*  width: 200px;
+    height: 200px; */
+    border-radius: 50%;
+    margin-right: -35px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(3, 70px);
+  }
+
+  .imagenes_portada img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+
+
+
 }
 
 /* ¿QUIENES SOMOS? */

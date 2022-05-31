@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <!-- iconos -->
+        <script src="https://kit.fontawesome.com/0671e501c7.js" crossorigin="anonymous"></script>
     <!-- insertar paginas -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -22,27 +24,37 @@
 
 <body>
     <header>
-        <nav class="header">
+        <nav class="nav">
+            <div>
+                <label for="check" class="btn_hmg">
+                    <i class="fa-solid fa-bars"></i>
+                </label>    
+            </div>
+
             <div class="logo_header">
                 <a href="#Inicio"><img src="Imagenes/Inicio.png" alt="Imagen de logo"></a>
             </div>
-            <ul class="menu_header">
-                <li><a href="#QuienesSomos" class="link-a-boton">About us</a></li>
-                <li><a href="#ModelosDisponibles" class="link-a-boton">Productos</a></li>
-                <li><a href="#ReferenciasDeClientes" class="link-a-boton">Referencias</a></li>
-                <li><a href="#PreguntasFrecuentes" class="link-a-boton">Preguntas Frecuentes</a></li>
-                <li><a href="#Contactanos" class="link-a-boton">¡Contactanos!</a></li>
+
+            <input type="checkbox" id="check" class="btn_hmg_input" />
+            <ul class= "menu_header">
+                <li><a href="#QuienesSomos" class="link-a-boton menu_header_text">About us</a></li>
+                <li><a href="#ModelosDisponibles" class="link-a-boton menu_header_text">Productos</a></li>
+                <li><a href="#ReferenciasDeClientes" class="link-a-boton menu_header_text" >Referencias</a></li>
+                <li><a href="#PreguntasFrecuentes" class="link-a-boton doble_linea menu_header_text">Preguntas Frecuentes</a></li>
+                <li><a href="#Contactanos" class="link-a-boton menu_header_text">¡Contactanos!</a></li>
             </ul>
             <div class="botones_header">
                 <button class="botones_violetas sombra"><a href="pages/carrito.html"
-                        class="link-a-boton label_medium">Carrito</a></button>
-                <button class="botones_violetas sombra"><a href="pages/iniciar_sesion.html"
-                        class="link-a-boton label_medium">Iniciar
-                        Sesion</a></button>
+                        class="link-a-boton label_medium"><i class="fa-solid fa-cart-shopping"></i><p class="text"> Carrito</p>
+                       </a></button>
+                <button class="botones_violetas sombra "><a href="pages/iniciar_sesion.html"
+                        class="link-a-boton label_medium"><i class="fa-solid fa-user"></i><p class="text"> Iniciar
+                            Sesion</p></a></button>
             </div>
         </nav>
     </header>
 
+   
     <section id="Inicio">
         <div class="encabezados">
             <h1>Un proyecto argentino</h1>
@@ -64,7 +76,6 @@
         </div>
 
     </section>
-
 
     <main>
         <section id="QuienesSomos">
