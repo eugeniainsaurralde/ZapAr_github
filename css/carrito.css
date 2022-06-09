@@ -13,6 +13,10 @@ footer {
     border: black;
 }
 
+ul {
+    margin: 0% !important;
+}
+
 
 /* ENCABEZADO DE LA PAGINA */
 .titulo_carrito {

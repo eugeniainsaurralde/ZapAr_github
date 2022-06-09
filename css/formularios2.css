@@ -1,6 +1,5 @@
-
 /* CALSES GENERALES */
-body{
+body {
     height: 100%;
 }
 
@@ -81,15 +80,7 @@ form {
 /* contenedor de inputs */
 /* formularios */
 
-/* footer */
-footer {
-    background-color: black;
-    margin-top: 0%;
-}
 
-footer h4 {
-    color: white;
-}
 
 /* ESTILOS DE TEXTO */
 
@@ -118,8 +109,7 @@ footer h4 {
     font-weight: 400;
     font-size: 19px;
     line-height: 32px;
-    text-align:center
-    
+    text-align: center
 }
 
 /* iNICIAR sESION */
@@ -130,18 +120,18 @@ footer h4 {
 }
 
 /* CONSULTAS */
-.datos_flex_padre{
+.datos_flex_padre {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
     justify-content: center;
 }
 
-.textArea_style textarea{
+.textArea_style textarea {
     text-align: center;
 }
 
 /* VENDEDORES MAYORISTAS */
-.masEspacio{
+.masEspacio {
     width: 110%;
 }
