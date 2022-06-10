@@ -3,6 +3,35 @@ body {
     height: 100%;
 }
 
+/* ESTILOS DE TEXTO */
+.label_formularios_texto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #840032;
+}
+
+.label_formulario_botones {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.encabezado_texto {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.188rem;
+    line-height: 2rem;
+    text-align: center
+}
+
 /* divs contenedores */
 section {
     display: flex;
@@ -18,17 +47,20 @@ section {
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    margin: 40px;
+    margin: 2.5rem;
 }
 
-.encabezado {
+.encabezado_formularios {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    /*     padding: 10px; */
-    padding: 10px 0px 0px 0px;
+    padding: 0.625rem 0rem 0rem 0rem;
+}
 
+.encabezado_formularios img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* formularios */
@@ -36,7 +68,8 @@ form {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    padding: 0px 20px 0px 20px;
+    padding: 0rem 1.25rem 0rem 1.25rem;
+    width: 100%;
 }
 
 /* contenedor de inputs */
@@ -45,19 +78,20 @@ form {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    margin-bottom: 10px;
+    /*    width: 100%; */
+    margin-bottom: 0.625rem;
 }
 
 /* caja de ingreso */
 .input_style {
-    height: 30px;
+    height: 1.875rem;
     text-align: center;
+    font-size: 0.8rem;
 }
 
 /* boton de tilde */
 .acepta_style {
-    margin: 0px 0px 10px 2px;
+    margin: 0rem 0rem 0.625rem 0.125rem;
 }
 
 /* botones */
@@ -65,58 +99,28 @@ form {
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .btn_formulario_style {
     background-color: #840032;
     color: white;
     border: #840032;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     height: 100%;
-    padding: 5px;
+    padding: 0.313rem;
 }
 
-/* contenedor de inputs */
-/* formularios */
 
 
 
-/* ESTILOS DE TEXTO */
 
-.label_formularios_texto {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: #840032;
-}
-
-.label_formulario_botones {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: center;
-    color: white;
-}
-
-.encabezado_texto {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 19px;
-    line-height: 32px;
-    text-align: center
-}
 
 /* iNICIAR sESION */
 
 .doble_linea {
     display: block;
-    width: 150px;
+    width: 9.375rem;
 }
 
 /* CONSULTAS */
@@ -134,4 +138,15 @@ form {
 /* VENDEDORES MAYORISTAS */
 .masEspacio {
     width: 110%;
+}
+
+@media screen and (max-width: 425px) {
+    .section_hija {
+        width: 80%;
+    }
+
+
+    .input_style {
+        width: 60%;
+    }
 }
