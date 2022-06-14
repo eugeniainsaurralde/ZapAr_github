@@ -93,8 +93,8 @@
         </nav>
       </header>
     <section>
-        <div class="section_hija sombra">
-            <div class="encabezado">
+        <div class="section_hija sombra centro">
+            <div class="encabezado_formularios">
                 <img src="../Imagenes/Inicio.png" alt="logo">
                 <p class="encabezado_texto">
                     ¡Hola! ¿Como estas? No dudes en hacer cualquier consulta que tengas, las criticas constructivas
@@ -105,43 +105,40 @@
                 </p>
             </div>
 
-            <form>
-                <div class="datos_flex_padre">
-                    <div class="label_formularios_flex">
-                        <label class="label_formularios_texto"
-                            for="nombre_apellido">Nombre y apellido:</label>
-                        <Input type="text" class="input_style sombra" placeholder="Ingrese su nombre y apellido"
-                            id="nombre_apellido" name="nombre_apellido" required>
-                    </div>
-                    <div class="label_formularios_flex">
-                        <label class="label_formularios_texto"
-                            for="telefono">Telefono:</label>
-                        <Input type="tel" class="input_style sombra" placeholder="Ingrese su telefono" id="telefono"
-                            name="telefono" required>
-                    </div>
-                    <div class="label_formularios_flex">
-                        <label class="label_formularios_texto"
-                            for="e-mail">E-mail:</label>
-                        <Input type="email" class="input_style sombra" placeholder="Ingrese su e-mail" id="e-mail"
-                            name="e-mail" required>
-                    </div>
+            <form class="datos_flex_padre">                
+                <div class="label_formularios_flex">
+                    <label class="label_formularios_texto"
+                        for="nombre_apellido">Nombre y apellido:</label>
+                    <Input type="text" class="input_style sombra" placeholder="Ingrese su nombre y apellido"
+                        id="nombre_apellido" name="nombre_apellido" required>
                 </div>
-
-                <div>
-                    <textarea name="consulta" class="sombra"
-                        placeholder="Describinos aqui tu duda o sugerencia" cols="70" rows="10"></textarea>
+                <div class="label_formularios_flex">
+                    <label class="label_formularios_texto"
+                        for="telefono">Telefono:</label>
+                    <Input type="tel" class="input_style sombra" placeholder="Ingrese su telefono" id="telefono"
+                        name="telefono" required>
                 </div>
-                <div class="btn_formulario_flex">
-                    <button
-                    class="sombra btn_formulario_style label_formulario_botones">Enviar</button>
+                <div class="label_formularios_flex">
+                    <label class="label_formularios_texto"
+                        for="e-mail">E-mail:</label>
+                    <Input type="email" class="input_style sombra" placeholder="Ingrese su e-mail" id="e-mail"
+                        name="e-mail" required>
                 </div>
+                <div class="textarea">
+                  <textarea name="consulta" class="sombra label_formularios_texto"
+                      placeholder="Escribinos aqui tu duda o sugerencia"></textarea>
+              </div>
+              <div class="btn_formulario_flex">
+                  <button
+                  class="sombra btn_formulario_style label_formulario_botones">Enviar</button>
+              </div>  
             </form>
         </div>
     </section>
 </body>
 
 <footer>
-    <h4>2020. ZapAr all rights reserved</h4>
+    <h4 class="footer">2020. ZapAr all rights reserved</h4>
     <a href="../index.html#Inicio"><img src="../Imagenes/Inicio.png" alt="Imagen de logo"></a></li>
     <nav class="footer_links">
         <li><a href="https://es-la.facebook.com/" target="_blank" class="link-a-boton"><img
