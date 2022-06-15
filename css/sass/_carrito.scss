@@ -1,0 +1,66 @@
+/* style carrito */
+body {
+  background-color: $colorPrincipal;
+  main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 0;
+    .zapas_unidad {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-evenly;
+      background-color: $colorSecundario;
+      margin-top: 2rem;
+      padding: 1rem;
+      width: 30%;
+
+      .foto_zapa {
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      .zapas_descripcion {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 1rem;
+        .title_precio {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          .precio_producto {
+            font: {
+              family: "Inter";
+              style: normal;
+              weight: 600;
+              size: 1.563rem;
+            }
+            text-transform: uppercase;
+            background-color: $colorLlamativo;
+            color: $FondoOscuro;
+            padding: 0.5rem;
+            margin-top: 0.375rem;
+          }
+        }
+        select {
+          width: min-content;
+        }
+        .btn_agregar {
+          border: none;
+          width: 3.125rem;
+          height: 3.125rem;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
