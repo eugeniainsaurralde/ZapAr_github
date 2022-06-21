@@ -19,128 +19,90 @@
     <!-- insertar paginas -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/estilo.css">
-
+     <!--  seo -->
     <meta name="description" content="Ingresa para poder acceder a increíbles ofertas y beneficios.">
     <meta name="keywords" content="zapatillas, ofertas, pyme, descuentos, compras, beneficios, exclusividad">
-
     <title>Iniciar Sesion | ZapAr</title>
 </head>
 
 <body>
-    <header>
-      <nav class="nav">
-        <div class="hmg_header">
-            <label for="check" class="btn_hmg">
-                <i class="fa-solid fa-bars"></i>
-            </label>    
-        </div>
+  <header>
+    <nav class="nav">
+      <div class="hmg_header">
+          <label for="check" class="btn_hmg">
+              <i class="fa-solid fa-bars"></i>
+          </label>    
+      </div>
+
+      <div class="logo_header">
+        <a href="../index.html#Inicio"><img src="../Imagenes/Inicio.png" alt="Imagen de logo"/></a>
+      </div>
+
+      <input type="checkbox" id="check" class="btn_hmg_input" />
+      <ul class="menu_header">
+        <li><a  href="../index.html#QuienesSomos" class="link-a-boton menu_header_text">About us</a></li>
+        <li><a href="../index.htmsDisponibles" class="link-a-boton menu_header_text">Productos</a></li>
+        <li><a href="../index.html#ReferenciasDeClientes" class="link-a-boton menu_header_text">Referencias</a></li>
+        <li><a href="../index.html#PreguntasFrecuentes" class="link-a-boton doble_linea menu_header_text">Preguntas Frecuentes</a></li>
+        <li><a href="../index.html#Contactanos" class="link-a-boton menu_header_text">¡Contactanos!</a></li>
+      </ul>
+
+      <div class="botones_header">
+        <button class="botones_violetas sombra">
+          <a href="carrito.html" class="link-a-boton label_medium"><i class="fa-solid fa-cart-shopping"></i><p class="text">Carrito</p>
+          </a>
+        </button>
+        <button class="botones_violetas sombra"><a href="iniciar_sesion.html" class="link-a-boton label_medium"><i class="fa-solid fa-user"></i><p class="text">Iniciar Sesion</p>
+          </a>
+        </button>
+      </div>
+    </nav>
+  </header>
   
-          <div class="logo_header">
-            <a href="../index.html#Inicio"
-              ><img src="../Imagenes/Inicio.png" alt="Imagen de logo"
-            /></a>
+  <section class="section">
+      <div class="section_hija sombra">
+          <div class="encabezado_formularios">
+              <img src="../Imagenes/Inicio.png" alt="logo">
           </div>
-  
-          <input type="checkbox" id="check" class="btn_hmg_input" />
-          <ul class="menu_header">
-            <li>
-              <a
-                href="../index.html#QuienesSomos"
-                class="link-a-boton menu_header_text"
-                >About us</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#ModelosDisponibles"
-                class="link-a-boton menu_header_text"
-                >Productos</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#ReferenciasDeClientes"
-                class="link-a-boton menu_header_text"
-                >Referencias</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#PreguntasFrecuentes"
-                class="link-a-boton doble_linea menu_header_text"
-                >Preguntas Frecuentes</a
-              >
-            </li>
-            <li>
-              <a
-                href="../index.html#Contactanos"
-                class="link-a-boton menu_header_text"
-                >¡Contactanos!</a
-              >
-            </li>
-          </ul>
-          <div class="botones_header">
-            <button class="botones_violetas sombra">
-              <a href="carrito.html" class="link-a-boton label_medium"
-                ><i class="fa-solid fa-cart-shopping"></i>
-                <p class="text">Carrito</p>
-              </a>
-            </button>
-            <button class="botones_violetas sombra">
-              <a href="iniciar_sesion.html" class="link-a-boton label_medium"
-                ><i class="fa-solid fa-user"></i>
-                <p class="text">Iniciar Sesion</p></a
-              >
-            </button>
-          </div>
-        </nav>
-      </header>
-  
-    <section class="section">
-        <div class="section_hija sombra">
-            <div class="encabezado_formularios">
-                <img src="../Imagenes/Inicio.png" alt="logo">
-            </div>
 
-            <form>
-                <div class="form_label_flex">
-                    <label class="form_label_texto doble_linea" for="usuario">Nombre de usuario:</label>
-                    <Input type="text" class="input_style sombra" placeholder="Ingrese su usuario" id="usuario"
-                        name="usuario" required>
-                </div>
-                <div class="form_label_flex">
-                    <label class="form_label_texto" for="contraseña">Contraseña:</label>
-                    <Input type="password" class="input_style sombra" placeholder="Ingrese su contraseña"
-                        id="contraseña" name="contraseña" required>
-                </div>
-                <div class="acepta_style">
-                    <input class="sombra" type="checkbox" name="acepta" value="1" />
-                    <label for="acepta">Guardar contraseña</label>
-                </div>
-                <div class="btn_formulario_flex">
-                    <button class="sombra btn_formulario_style label_formulario_botones">Iniciar sesion</button>
-                    <button class="sombra btn_formulario_style label_formulario_botones"><a href="registrate.html"
-                            class="link-a-boton">¿No tenes una cuenta? Registrate</a></button>
-                </div>
-            </form>
-        </div>
+          <form>
+              <div class="form_label_flex">
+                  <label class="form_label_texto doble_linea" for="usuario">Nombre de usuario:</label>
+                  <Input type="text" class="input_style sombra" placeholder="Ingrese su usuario" id="usuario"
+                      name="usuario" required>
+              </div>
+              <div class="form_label_flex">
+                  <label class="form_label_texto" for="contraseña">Contraseña:</label>
+                  <Input type="password" class="input_style sombra" placeholder="Ingrese su contraseña"
+                      id="contraseña" name="contraseña" required>
+              </div>
+              <div class="acepta_style">
+                  <input class="sombra" type="checkbox" name="acepta" value="1" />
+                  <label for="acepta">Guardar contraseña</label>
+              </div>
+              <div class="btn_formulario_flex">
+                  <button class="sombra btn_formulario_style label_formulario_botones">Iniciar sesion</button>
+                  <button class="sombra btn_formulario_style label_formulario_botones"><a href="registrate.html"
+                          class="link-a-boton">¿No tenes una cuenta? Registrate</a></button>
+              </div>
+          </form>
+      </div>
+  </section>
 
-    </section>
+  <footer>
+      <h4 class="footer">2022. ZapAr all rights reserved</h4>
+      <a href="../index.html#Inicio"><img src="../Imagenes/Inicio.png" alt="Imagen de logo"></a></li>
+      <nav class="footer_links">
+          <li><a href="https://es-la.facebook.com/" target="_blank" class="link-a-boton"><img
+                      src="../Imagenes/fb_negro.jpg" alt="logo de facebook"></a></li>
+          <li><a href="https://www.instagram.com/?hl=es-la" target="_blank" class="link-a-boton"><img
+                      src="../Imagenes/ig_negro.jpg" alt="logo de instagram"></a></li>
+          <li><a href="https://www.whatsapp.com/" target="_blank" class="link-a-boton"><img
+                      src="../Imagenes/wpp_negro.jpg" alt="logo de whats app"></a></li>
+      </nav>
+  </footer>
 
-    <footer>
-        <h4 class="footer">2022. ZapAr all rights reserved</h4>
-        <a href="../index.html#Inicio"><img src="../Imagenes/Inicio.png" alt="Imagen de logo"></a></li>
-        <nav class="footer_links">
-            <li><a href="https://es-la.facebook.com/" target="_blank" class="link-a-boton"><img
-                        src="../Imagenes/fb_negro.jpg" alt="logo de facebook"></a></li>
-            <li><a href="https://www.instagram.com/?hl=es-la" target="_blank" class="link-a-boton"><img
-                        src="../Imagenes/ig_negro.jpg" alt="logo de instagram"></a></li>
-            <li><a href="https://www.whatsapp.com/" target="_blank" class="link-a-boton"><img
-                        src="../Imagenes/wpp_negro.jpg" alt="logo de whats app"></a></li>
-        </nav>
-    </footer>
 </body>
-
 </html>
 
 
