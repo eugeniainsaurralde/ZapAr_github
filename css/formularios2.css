@@ -1,37 +1,8 @@
 /* CALSES GENERALES */
 
-/* ESTILOS DE TEXTO */
-.label_formularios_texto {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: #840032;
-}
-
-.label_formulario_botones {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 2rem;
-    text-align: center;
-    color: white;
-}
-
-.encabezado_texto {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.188rem;
-    line-height: 2rem;
-    text-align: center;
-    padding: 1.5rem;
-}
 
 /* divs contenedores */
-section {
+.section {
     display: flex;
     justify-content: center;
     background-color: #102336ff;
@@ -72,7 +43,7 @@ form {
 }
 
 /* contenedor de inputs */
-.label_formularios_flex {
+.form_label_flex {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -119,16 +90,16 @@ form {
 }
 
 /* CONSULTAS y VENDEDORES MAYORISTAS */
-.datos_flex_padre {
+.form_datos_flex_padre {
     display: flex;
     flex-flow: column nowrap;
     width: 50%;
     justify-content: center;
 }
 
-.centro {
+/* .centro {
     align-items: center;
-}
+} */
 
 .textarea {
     height: 8rem;
@@ -147,13 +118,15 @@ textarea {
         width: 80%;
     }
 
-    .datos_flex_padre {
+    .form_datos_flex_padre {
         width: 100%;
     }
 
     .input_style {
         width: auto;
     }
+
+
 
 
 

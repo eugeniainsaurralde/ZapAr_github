@@ -146,6 +146,36 @@ p {
   color: #FFFFFF;
 }
 
+/* estilos texto formularios */
+.form_label_texto {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #840032;
+}
+
+.label_formulario_botones {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.encabezado_texto {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.188rem;
+  line-height: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
 /* .doble_linea {
   display: block;
   text-align: center;
@@ -242,8 +272,8 @@ header {
 }
 
 .encabezados button {
-  width: 20%;
-  margin-left: 0%;
+  width: 25%;
+  margin: 0%;
 }
 
 /* Imagenes de portada */
@@ -370,6 +400,7 @@ header {
 .galeria img {
   max-width: 100%;
   max-height: 100%;
+  justify-self: center;
 }
 
 .img1 {
@@ -435,7 +466,7 @@ header {
 .testimonios {
   background-color: #e59500ff;
   text-align: center;
-  padding: 5%;
+  padding: 8%;
 }
 
 .azul {

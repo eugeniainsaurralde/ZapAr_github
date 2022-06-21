@@ -9,7 +9,7 @@ body {
     margin: 0;
     .zapas_unidad {
       display: flex;
-      flex-flow: column nowrap;
+      flex-flow: column wrap;
       justify-content: space-evenly;
       background-color: $colorSecundario;
       margin-top: 2rem;
@@ -60,6 +60,12 @@ body {
             width: 100%;
           }
         }
+      }
+      @include responsive(minimo, mobile) {
+        width: 80%;
+      }
+      @include responsive(mobile, tablet) {
+        width: 40%;
       }
     }
   }
