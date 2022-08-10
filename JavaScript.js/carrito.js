@@ -1,7 +1,10 @@
 /* Funcionalidad de cargar del producto */
+
 const Clickbutton = document.querySelectorAll(".btn_agregar");
 const tbody = document.querySelector(".cuerpo_de_tabla");
 let carrito = [];
+
+
 
 Clickbutton.forEach((btn_agregar) => {
   btn_agregar.addEventListener("click", cargarAlCarrito);
@@ -49,6 +52,7 @@ function agregarAlCarrito(newCompra) {
   carrito.push(newCompra);
 
   renderCarrito();
+
 }
 
 function renderCarrito() {

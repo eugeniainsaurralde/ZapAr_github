@@ -1,0 +1,121 @@
+/* Titulos, subtitulos y parrafos*/
+%inter{
+    font-family: 'Inter';
+     font-style: normal;
+}
+
+h1 {
+/* width: 540px;
+height: 196px; */
+font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 6.25rem;
+line-height: 6.87rem;
+color: $colorPrincipal;
+}
+
+h2 {
+@extend %inter;
+font-weight: 800;
+font-size: 3rem;
+line-height: 3.125rem;
+color: $colorPrincipal;
+}
+
+h4 {
+@extend %inter;
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 2rem;
+text-align: center;
+}
+
+sub {
+@extend %inter;
+font-weight: 400;
+font-size: 1.125rem;
+line-height: 2rem;
+color: $colorPrincipal;
+}
+
+.encabezado_texto {
+    @extend %inter;
+    font-weight: 400;
+    font-size: 1.188rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    }
+
+strong {
+@extend %inter;
+font-weight: 700;
+font-size: 1.75rem;
+line-height: 2.5rem;
+text-align: center;
+color: $colorPrincipal;
+}
+
+p {
+@extend %inter;
+font-weight: 400;
+font-size: 0.875rem;
+line-height: 1.5rem;
+}
+
+.label_large {
+@extend %inter;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.063rem;
+}
+
+.label_medium {
+@extend %inter;
+font-weight: 500;
+font-size: 0.875rem;
+line-height: 1.25rem;
+color: $FondoOscuro;
+}
+
+.text_quienesSomos_carrito {
+@extend %inter;
+font-weight: 700;
+font-size: 0.875rem;
+line-height: 1.125rem;
+text-transform: uppercase;
+color: $FondoOscuro;
+}
+
+@mixin navMenuText($weight,$size,$line_height,$color) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $line_height;
+    color: $color;
+    text-align: center; 
+}
+
+/* estilos texto formularios */
+.form_label_texto {
+@extend %inter;
+font-weight: 600;
+font-size: 1.5rem;
+line-height: 2rem;
+color: $colorSecundario;
+}
+
+.label_formulario_botones {
+@extend %inter;
+font-weight: 400;
+font-size: 1rem;
+line-height: 2rem;
+text-align: center;
+color: $FondoOscuro;
+}
+
+.doble_linea {
+    display: block;
+   /*  text-align: center;
+    line-height: 0px; */
+  }

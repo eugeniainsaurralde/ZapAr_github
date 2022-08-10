@@ -1,0 +1,116 @@
+/* MENU */
+header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: min-content;
+    z-index: 5;
+    .nav{
+        background-color: $FondoOscuro;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__hmg--btn,&__hmg--btn--input, .fa-cart-shopping, .fa-user{
+            display: none;
+        }
+        &__logo{
+            width: 13%;
+            line-height: 0%;
+            img{
+                @include img;
+            }
+        }
+        &__menu{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+            a{
+                @include link-a-btn;
+                @extend %inter;
+                @include navMenuText(500,0.938rem,1.25rem,$FondoClaro);
+                width: min-content;
+                padding: 1rem;
+            }
+        }
+        &__btns{
+            display: flex;
+            flex-wrap: nowrap;
+            button{
+                @include btn--violeta;
+                @include sombra;
+                a{
+                    @include link-a-btn;
+                }
+                
+            }
+           
+        }
+
+        @include responsive(minimo, tablet){
+            &__hmg{
+                z-index: 5;
+                &--btn{
+                    display: block;
+                    cursor: pointer;
+                    font-size: 2rem;
+                    color: $colorPrincipal;
+                    margin-left: 1%; 
+                    &--input:checked+.nav__menu{
+                        clip-path: circle(100% at center);
+                    }
+                }
+                
+            }
+            &__logo{
+                height: 10%;
+                width: 30%;
+                margin-left: 40px;
+
+                z-index: 5;
+                a{
+                    img{
+                        border-radius: 50%;  
+                    }
+                }
+            }
+            &__menu{
+                position: fixed;
+                width: 100vw;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            
+                z-index: 0;
+            
+                /*   fondo */
+                background: $colorSecundario;
+                opacity: 0.9;
+            
+                /*     transicion */
+                clip-path: circle(0 at center);
+                transition: clip-path 1s ease-in-out;
+                li{
+                    a{
+                        @include navMenuText(600,1.9rem,4rem,$FondoOscuro);
+                    }
+                } 
+            }
+
+            &__btns{
+                z-index: 5;
+                .fa-cart-shopping, .fa-user{
+                    display: block;
+                }
+                p{
+                    display: none;
+                }
+            }
+
+        }
+      
+    }
+}

@@ -1,0 +1,27 @@
+/* CLASES GENERALES */
+@mixin link-a-btn{
+    text-decoration: none;
+  outline: none;
+  color: white;
+}
+@mixin img {
+    max-width: 100%;
+    max-height: 100%;
+}
+@mixin sombra {
+    border-radius: 8px;
+  box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.15);
+}
+%btn{
+  margin: 0.625rem;
+  padding: 0.938rem;
+  border-radius: 6px;
+}
+@mixin btn--violeta{
+  @extend %btn;
+  background: $colorTerciario;
+  border-color: $colorTerciario;
+}
+.margin_bottom {
+    margin-bottom: 6%;
+  }

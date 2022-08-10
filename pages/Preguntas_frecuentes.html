@@ -17,7 +17,8 @@
     <!-- iconos -->
     <script src="https://kit.fontawesome.com/0671e501c7.js" crossorigin="anonymous"></script>
     <!-- insertar paginas -->
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/css/estilo.css">
     <!--  seo -->
     <meta name="description" content="Podes despejar tus dudas con las preguntas de otros clientes y además conocer sus experiencias, si aun así tenes alguna otra consulta nos la podes enviar.">
     <meta name="keywords" content="zapatillas, asesoramiento, consultas, preguntas, experiencias, envios, pagos, mayoristas, plazos">
@@ -27,31 +28,32 @@
 <body>
   <header>
     <nav class="nav">
-      <div class="hmg_header">
-          <label for="check" class="btn_hmg">
+      <div class="nav__hmg">
+          <label for="check" class="nav__hmg--btn">
               <i class="fa-solid fa-bars"></i>
           </label>    
       </div>
 
-      <div class="logo_header">
+      <div class="nav__logo">
         <a href="../index.html#Inicio"><img src="../Imagenes/Inicio.png" alt="Imagen de logo"/></a>
       </div>
 
-      <input type="checkbox" id="check" class="btn_hmg_input" />
-      <ul class="menu_header">
-        <li><a  href="../index.html#QuienesSomos" class="link-a-boton menu_header_text">About us</a></li>
-        <li><a href="../index.htmsDisponibles" class="link-a-boton menu_header_text">Productos</a></li>
-        <li><a href="../index.html#ReferenciasDeClientes" class="link-a-boton menu_header_text">Referencias</a></li>
-        <li><a href="../index.html#PreguntasFrecuentes" class="link-a-boton doble_linea menu_header_text">Preguntas Frecuentes</a></li>
-        <li><a href="../index.html#Contactanos" class="link-a-boton menu_header_text">¡Contactanos!</a></li>
+      <input type="checkbox" id="check" class="nav__hmg--btn--input" />
+      <ul class="nav__menu">
+        <li><a  href="../index.html#QuienesSomos">About us</a></li>
+        <li><a href="../index.html#ModelosDisponibles">Productos</a></li>
+        <li><a href="../index.html#ReferenciasDeClientes">Referencias</a></li>
+        <li><a href="../index.html#PreguntasFrecuentes" class="doble_linea">Preguntas Frecuentes</a></li>
+        <li><a href="../index.html#Contactanos">¡Contactanos!</a></li>
       </ul>
 
-      <div class="botones_header">
-        <button class="botones_violetas sombra">
-          <a href="carrito.html" class="link-a-boton label_medium"><i class="fa-solid fa-cart-shopping"></i><p class="text">Carrito</p>
+      <div class="nav__btns">
+        <button>
+          <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i><p class="label_medium">Carrito</p>
           </a>
         </button>
-        <button class="botones_violetas sombra"><a href="iniciar_sesion.html" class="link-a-boton label_medium"><i class="fa-solid fa-user"></i><p class="text">Iniciar Sesion</p>
+        <button>
+          <a href="iniciar_sesion.html"><i class="fa-solid fa-user"></i><p class="label_medium">Iniciar Sesion</p>
           </a>
         </button>
       </div>

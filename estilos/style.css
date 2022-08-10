@@ -25,7 +25,7 @@ li {
 }
 
 /* CLASES GENERALES */
-.botones_violetas {
+/* .botones_violetas {
   margin: 0.625rem;
   padding: 0.938rem;
   background: #8C30F5;
@@ -46,10 +46,10 @@ li {
 
 .margin_bottom {
   margin-bottom: 6%;
-}
+} */
 
 /* Titulos, subtitulos y parrafos*/
-.menu_header_text {
+/* .nav__menu__text {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -57,19 +57,19 @@ li {
   line-height: 1.25rem;
   color: #18191F;
   text-align: center;
-}
+} */
 
-h1 {
+/* h1 {
   /* width: 540px;
-  height: 196px; */
+  height: 196px; 
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 6.25rem;
   line-height: 6.87rem;
   color: #102336;
-}
-
+} */
+/* 
 h2 {
   font-family: 'Inter';
   font-style: normal;
@@ -117,18 +117,18 @@ p {
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.5rem;
-}
+} */
 
-.label_medium {
+/* .label_medium {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   line-height: 1.25rem;
   color: #FFFFFF;
-}
+} */
 
-.label_large {
+/* .label_large {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -144,10 +144,10 @@ p {
   line-height: 1.125rem;
   text-transform: uppercase;
   color: #FFFFFF;
-}
+}*/
 
 /* estilos texto formularios */
-.form_label_texto {
+/* .form_label_texto {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
@@ -174,7 +174,7 @@ p {
   line-height: 2rem;
   text-align: center;
   padding: 1.5rem;
-}
+}  */
 
 /* .doble_linea {
   display: block;
@@ -192,7 +192,7 @@ main {
 }
 
 /* MENU */
-header {
+/* header {
   position: sticky;
   top: 0;
   width: 100vw;
@@ -205,10 +205,10 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
+} */
 
 /* header logo */
-.logo_header {
+/* .logo_header {
   width: 13%;
   line-height: 0%;
 }
@@ -217,9 +217,9 @@ header {
   max-width: 100%;
   max-height: 100%;
 }
-
+ */
 /* header menu */
-.menu_header {
+/* .menu_header {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -229,10 +229,10 @@ header {
 .menu_header li a {
   width: min-content;
   padding: 1rem;
-}
+} */
 
 /* header botones */
-.botones_header {
+/* .botones_header {
   display: flex;
   flex-wrap: nowrap;
 }
@@ -245,7 +245,7 @@ header {
 .btn_hmg, .btn_hmg_input, .fa-cart-shopping, .fa-user {
   display: none;
 }
-
+ */
 
 /* INICIO */
 #Inicio {
@@ -663,7 +663,7 @@ footer a {
   /* MENU */
 
   /*   boton hamburguese */
-  .hmg_header {
+  /*  .hmg_header {
     z-index: 5;
   }
 
@@ -673,10 +673,10 @@ footer a {
     font-size: 2rem;
     color: #102336;
     margin-left: 1%;
-  }
+  } */
 
   /*   logo */
-  .logo_header {
+  /*  .logo_header {
     height: 10%;
     width: 30%;
     margin-left: 40px;
@@ -687,18 +687,18 @@ footer a {
   .logo_header a img {
     border-radius: 50%;
   }
-
+ */
   /* botones sesion y carrito */
-  .fa-cart-shopping, .fa-user {
+  /* .fa-cart-shopping, .fa-user {
     display: block;
   }
 
   .text {
     display: none;
   }
-
+ */
   /*   lista menu */
-  .menu_header {
+  /* .menu_header {
     position: fixed;
     width: 100vw;
     top: 0;
@@ -708,19 +708,19 @@ footer a {
     justify-content: center;
     align-items: center;
 
-    z-index: 0;
+    z-index: 0; */
 
-    /*   fondo */
-    background: #840033;
-    opacity: 0.9;
+  /*   fondo */
+  /*  background: #840033;
+    opacity: 0.9; */
 
-    /*     transicion */
-    clip-path: circle(0 at center);
-    transition: clip-path 1s ease-in-out;
-  }
+  /*     transicion */
+  /*  clip-path: circle(0 at center);
+    transition: clip-path 1s ease-in-out; 
+}*/
 
-  .menu_header li a {
-    /*  tipografia */
+  /* .menu_header li a {
+      tipografia 
     font-weight: 600;
     font-size: 1.9rem;
     line-height: 4rem;
@@ -734,7 +734,7 @@ footer a {
 
   .btn_hmg_input:checked+.menu_header {
     clip-path: circle(100% at center);
-  }
+  } */
 
   /* INICIO */
   /* encabezados */

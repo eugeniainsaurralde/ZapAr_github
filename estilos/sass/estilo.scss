@@ -1,0 +1,14 @@
+@import "paletaColores";
+@import "estilosTexto";
+@import "clasesGenerales";
+@import "responsive";
+@import "carrito";
+@import "formularios";
+@import "header";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    list-style-type: none;
+  }
