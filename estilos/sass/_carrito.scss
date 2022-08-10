@@ -1,12 +1,11 @@
 /* style carrito */
-body {
-  background-color: $colorPrincipal;
-  main {
+main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     width: 100vw;
     margin: 0;
+    background-color: $colorPrincipal;
     .zapas_unidad {
       display: flex;
       flex-flow: column wrap;
@@ -69,4 +68,8 @@ body {
       }
     }
   }
-}
+    .carrito_JS_container{
+      height: 100vh;
+      margin: 2rem;
+  }
+

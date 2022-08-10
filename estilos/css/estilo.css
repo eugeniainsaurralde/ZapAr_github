@@ -113,17 +113,15 @@ header .nav__btns button {
 }
 
 /* style carrito */
-body {
-  background-color: #102336;
-}
-body main {
+main {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   width: 100vw;
   margin: 0;
+  background-color: #102336;
 }
-body main .zapas_unidad {
+main .zapas_unidad {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
@@ -132,25 +130,25 @@ body main .zapas_unidad {
   padding: 1rem;
   width: 30%;
 }
-body main .zapas_unidad .foto_zapa img {
+main .zapas_unidad .foto_zapa img {
   max-width: 100%;
   max-height: 100%;
 }
-body main .zapas_unidad .zapas_descripcion {
+main .zapas_unidad .zapas_descripcion {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
   padding-top: 1rem;
 }
-body main .zapas_unidad .zapas_descripcion .title_precio {
+main .zapas_unidad .zapas_descripcion .title_precio {
   display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-body main .zapas_unidad .zapas_descripcion .title_precio .precio_producto {
+main .zapas_unidad .zapas_descripcion .title_precio .precio_producto {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -161,26 +159,31 @@ body main .zapas_unidad .zapas_descripcion .title_precio .precio_producto {
   padding: 0.5rem;
   margin-top: 0.375rem;
 }
-body main .zapas_unidad .zapas_descripcion select {
+main .zapas_unidad .zapas_descripcion select {
   width: min-content;
 }
-body main .zapas_unidad .zapas_descripcion .btn_agregar {
+main .zapas_unidad .zapas_descripcion .btn_agregar {
   border: none;
   width: 3.125rem;
   height: 3.125rem;
 }
-body main .zapas_unidad .zapas_descripcion .btn_agregar img {
+main .zapas_unidad .zapas_descripcion .btn_agregar img {
   width: 100%;
 }
 @media screen and (min-width: 310px) and (max-width: 480px) {
-  body main .zapas_unidad {
+  main .zapas_unidad {
     width: 80%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1023px) {
-  body main .zapas_unidad {
+  main .zapas_unidad {
     width: 40%;
   }
+}
+
+.carrito_JS_container {
+  height: 100vh;
+  margin: 2rem;
 }
 
 /* style formularios */
